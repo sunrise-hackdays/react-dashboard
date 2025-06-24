@@ -1,0 +1,5 @@
+/* StatCard.module.css */
+.card {
+  width: 100%;            /* 親幅いっぱい or 好きな幅に */
+  text-align: center;
+}

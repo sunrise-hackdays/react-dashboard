@@ -1,0 +1,42 @@
+.header {
+  padding: 1rem 0;
+}
+
+/* ロゴとテキストを水平に並べるコンテナ */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* ロゴとテキストの間隔 */
+}
+
+/* テキスト部分を縦に並べる */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* タイトル */
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+/* サブタイトル */
+.subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.badge {
+  margin-left: auto;
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  align-self: center;
+}

@@ -23,7 +23,7 @@
 
 ## デモ
 こちらから実際に触れます👇  
-🌐 https://react-dashboard.vercel.app
+🌐 https://react-dashboard-hazel-zeta.vercel.app
 ![UIイメージ](./public/screenshot.png)
 
 ## セットアップ方法

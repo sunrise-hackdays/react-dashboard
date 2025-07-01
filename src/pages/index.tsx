@@ -77,7 +77,7 @@ export default function DashboardPage() {
         />
         </div>
         <div style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>通知一覧</h2>
+        <h2 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#222',}}>通知一覧</h2>
         {notifications.map((n, i) => (
         <NotificationCard
             key={i}

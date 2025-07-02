@@ -40,3 +40,10 @@
   font-size: 0.8rem;
   align-self: center;
 }
+
+.nav {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+}

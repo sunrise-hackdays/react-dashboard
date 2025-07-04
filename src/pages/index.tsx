@@ -76,8 +76,8 @@ export default function DashboardPage() {
             content="タスク3件完了・SLA 98%達成！"
         />
         </div>
-        <div style={{ marginTop: '2rem' }}>
-        <h2 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#222',}}>通知一覧</h2>
+        <div className={styles.section}>
+        <h2 className={styles.sectionTitle}>通知一覧</h2>
         {notifications.map((n, i) => (
         <NotificationCard
             key={i}
@@ -91,36 +91,21 @@ export default function DashboardPage() {
         ))}
 
         {selectedNotification && (
-            <div style={{
-                marginTop: '1.5rem',
-                padding: '1rem 1.5rem',
-                border: '1px solid #ccc',
-                borderRadius: '8px',
-                backgroundColor: '#fff',
-                color: '#222',
-            }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div className={styles.detailBox}>
+            <div className={styles.detailHeader}>
             <h3 style={{ margin: 0 }}>📌 詳細</h3>
             <button
                 onClick={() => setSelectedNotification(null)}
-                style={{
-                background: 'transparent',
-                border: 'none',
-                fontSize: '1rem',
-                cursor: 'pointer',
-                color: '#999'
-                }}
+                className={styles.closeButton}
                 aria-label="閉じる"
             >
                 ✕
             </button>
             </div>
-            <p style={{ fontWeight: 'bold', marginTop: '0.5rem' }}>{selectedNotification.title}</p>
+            <p className={styles.detailTitle}>{selectedNotification.title}</p>
             <p>{selectedNotification.content}</p>
         </div>
         )}
-
-
       </div>
 </main>
 

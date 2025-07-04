@@ -1,0 +1,20 @@
+.notFoundContainer {
+  text-align: center;
+  padding: 5rem;
+}
+
+.notFoundTitle {
+  font-size: 2rem;
+  color: #222;
+}
+
+.notFoundText {
+  margin-top: 1rem;
+  color: #222;
+}
+
+.backToHome {
+  margin-top: 2rem;
+  color: #0070f3;
+  cursor: pointer;
+}

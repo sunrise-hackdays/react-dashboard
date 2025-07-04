@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import styles from '../styles/Contact.module.css';
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -11,7 +12,6 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     alert(`送信内容:\n名前: ${form.name}\nメール: ${form.email}\n内容: ${form.message}`);
-    // フォーム送信処理は今は仮で
   };
 
   return (
@@ -19,9 +19,9 @@ export default function ContactPage() {
       <Head>
         <title>お問い合わせ - Reactポートフォリオ</title>
       </Head>
-      <main style={{ padding: '2rem', color: '#222', maxWidth: '600px', margin: '0 auto' }}>
+      <main className={styles.contactContainer}>
         <h1>お問い合わせ</h1>
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <form onSubmit={handleSubmit} className={styles.formLayout}>
           <label>
             お名前
             <input
@@ -30,7 +30,7 @@ export default function ContactPage() {
               value={form.name}
               onChange={handleChange}
               required
-              style={{ width: '100%', padding: '0.5rem' }}
+              className={styles.inputField}
             />
           </label>
           <label>
@@ -41,7 +41,7 @@ export default function ContactPage() {
               value={form.email}
               onChange={handleChange}
               required
-              style={{ width: '100%', padding: '0.5rem' }}
+              className={styles.inputField}
             />
           </label>
           <label>
@@ -52,10 +52,10 @@ export default function ContactPage() {
               onChange={handleChange}
               required
               rows={5}
-              style={{ width: '100%', padding: '0.5rem' }}
+              className={styles.inputField}
             />
           </label>
-          <button type="submit" style={{ padding: '0.75rem', background: '#222', color: '#fff', border: 'none' }}>
+          <button type="submit" className={styles.submitButton}>
             送信する
           </button>
         </form>

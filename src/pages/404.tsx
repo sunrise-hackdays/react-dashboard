@@ -1,17 +1,16 @@
 // src/pages/404.tsx
 import Link from 'next/link';
+import styles from '../styles/NotFound.module.css';
 
 export default function Custom404() {
   return (
-    <main style={{ textAlign: 'center', padding: '5rem' }}>
-      <h1 style={{ fontSize: '2rem' , color: '#222',}}>404 - ページが見つかりませんでした</h1>
-      <p style={{ marginTop: '1rem' , color: '#222',}}>
+    <main className={styles.notFoundContainer}>
+      <h1 className={styles.notFoundTitle}>404 - ページが見つかりませんでした</h1>
+      <p className={styles.notFoundText}>
         お探しのページは存在しないか、移動した可能性があります。
       </p>
       <Link href="/">
-        <p style={{ marginTop: '2rem', color: '#0070f3', cursor: 'pointer' }}>
-          ホームに戻る
-        </p>
+        <p className={styles.backToHome}>ホームに戻る</p>
       </Link>
     </main>
   );

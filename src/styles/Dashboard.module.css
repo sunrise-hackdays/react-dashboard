@@ -9,3 +9,46 @@
     grid-template-columns: 1fr; /* スマホでは1列に */
   }
 }
+
+.main {
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.detailBox {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #222;
+}
+
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.detailTitle {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

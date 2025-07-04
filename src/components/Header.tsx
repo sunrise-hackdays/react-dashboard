@@ -34,7 +34,6 @@ export default function Header({ title, subtitle, unreadCount }: Props) {
       </div>
       <nav className={styles.nav}>
         <Link href="/">🏠 ホーム</Link>
-        <Link href="/hoge">📄 Hoge</Link>
         <Link href="/works">📁実績一覧</Link>
         <Link href="/contact">📨 お問い合わせ</Link>
       </nav>

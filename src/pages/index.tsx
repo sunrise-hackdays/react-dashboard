@@ -67,7 +67,7 @@ export default function DashboardPage() {
 
     return (
         <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-        <Header title="Superfiles.in" subtitle="Free Components" unreadCount={unreadCount} />
+        <Header title="ダッシュボード" subtitle="Reactポートフォリオ" unreadCount={unreadCount} />
 
         <div className={styles.tileContainer}>
         <GraphTile stats={stats} />

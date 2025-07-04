@@ -24,11 +24,13 @@
 ![UIイメージ](./public/screenshot.png)
 
 ## 📁 ディレクトリ構成
+```bash
 src/
 ├── components/       // UIコンポーネント
 ├── pages/            // 各ページ（/contact, /works など）
 ├── styles/           // CSS Modules
 └── utils/            // 補助関数
+```
 
 ## 🔨 セットアップ
 ```bash
@@ -36,6 +38,7 @@ git clone https://github.com/sunrise-hackdays/react-dashboard.git
 cd react-dashboard
 npm install
 npm run dev
+```
 
 ## 🎯 制作背景と目的
 ReactやNext.jsの実務経験をアピールするため、
